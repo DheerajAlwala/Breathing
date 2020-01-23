@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+	<pattern>hi</pattern>
+	<template>what is your problem</template>
+</category>
+<category>
+    <pattern># breathing</pattern>
+    <that>what is your problem</that>
+    <template>how long you are suffering from one day or week<think><set name="topic">breathing</set></think></template>
+</category>
+<topic name="breathing">
+<category>
+    <pattern>one day</pattern>
+    <that>how long you are suffering from one day or week</that>
+    <template>do you used any medicines.yes or no</template>
+</category>
+<category>
+    <pattern>one week</pattern>
+    <template><srai>one day</srai></template>
+</category>
+<category>
+    <pattern>yes</pattern>
+    <that>do you used any medicines.yes or no</that>
+    <template>did it given any relief.yes or no</template>
+</category>
+<category>
+    <pattern>no</pattern>
+    <that>do you used any medicines.yes or no</that>
+    <template>let me ask you few questions regarding symptoms.do you have Anemia ie low red blood cell count or Asthma</template>
+</category>
+<category>
+    <pattern>yes</pattern>
+    <that>did it given any relief.yes or no</that>
+    <template>let me ask you few questions regarding symptoms.do you have Anemia ie low red blood cell count or Asthma</template>
+</category>
+<category>
+    <pattern>no</pattern>
+    <that>did it given any relief.yes or no</that>
+    <template>let me ask you few questions regarding symptoms.do you have Anemia ie low red blood cell count or Asthma</template>
+</category>
+<category>
+    <pattern>yes</pattern>
+    <that> let me ask you few questions regarding symptoms.do you have Anemia ie low red blood cell count or Asthma</that>
+    <template>Breathing rapidly.yes or no</template>
+</category>
+<category>
+    <pattern>no</pattern>
+    <that>let me ask you few questions regarding symptoms.do you have Anemia ie low red blood cell count or Asthma</that>
+    <template>Breathing rapidly.yes or no</template>
+</category>
+<category>
+    <pattern>yes</pattern>
+    <that>Breathing rapidly.yes or no</that>
+    <template>Very anxious and agitated.yes or no</template>
+</category>
+<category>
+    <pattern>no</pattern>
+    <that>Breathing rapidly.yes or no</that>
+    <template>Very anxious and agitated.yes or no</template>
+</category>
+<category>
+    <pattern>yes</pattern>
+    <that>Very anxious and agitated.yes or no</that>
+    <template>do you have Rapid or irregular heartbeat.yes or no</template>
+</category>
+<category>
+    <pattern>no</pattern>
+    <that>Very anxious and agitated.yes or no</that>
+    <template>do you have Rapid or irregular heartbeat.yes or no</template>
+</category>
+
+<category>
+    <pattern>yes</pattern>
+    <that>do you have Rapid or irregular heartbeat.yes or no</that>
+    <template>are you Sweating a lot.yes or no</template>
+</category>
+<category>
+    <pattern>no</pattern>
+    <that>do you have Rapid or irregular heartbeat.yes or no</that>
+    <template>are you Sweating a lot.yes or no</template>
+</category>
+
+<category>
+    <pattern>yes</pattern>
+    <that>are you Sweating a lot.yes or no</that>
+    <template>At this situations avoid exposure to pollutants as much as possible, avoid breathing allergens and environmental toxins.do not take any food or drinks.Use asthma inhaler or home oxygen.In case of emergency call your doctor or health care provider right away</template>
+</category>
+<category>
+    <pattern>no</pattern>
+    <that>are you Sweating a lot.yes or no</that>
+    <template>prevent this following some tips.Loosen any tight clothing.do not place a pillow under the person's head which can close the airway</template>
+</category>
+</topic>
+</aiml>
